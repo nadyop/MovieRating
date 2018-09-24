@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
                 .build();
         movieService = retrofit.create(MovieService.class);
 
-        movieService.findPopularMovies("4bbbfeaa56287e045385e892563e7168").enqueue(
+        movieService.findPopularMovies("Enter your API Key").enqueue(
                 new Callback<ListMovieResponse<MovieResponse>>() {
             @Override
             public void onResponse(Call<ListMovieResponse<MovieResponse>> call,
